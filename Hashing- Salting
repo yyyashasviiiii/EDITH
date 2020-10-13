@@ -1,0 +1,385 @@
+
+from math import sqrt
+import mysql.connector
+import turtle
+
+
+mydb = mysql.connector.connect(host="localhost", user="root", passwd="NNSSJTGIKO@1234kurama..madaramysql",
+                               database="passwords")
+
+mycursor = mydb.cursor()
+
+# mycursor.execute("CREATE TABLE ENCRYPT1 (Original VARCHAR(255), Salted INTEGER(200), Hashed VARCHAR(255))")
+
+# mycursor.execute("SHOW TABLES")
+
+password = input("Enter The Password ")             # taking the password input from the user
+val = []
+ind = []
+f = "6"
+
+password = password.join("69")
+
+
+for i in password:
+
+        p1 = ord(i)+69 + ord(i)+ ord(f)
+        if i=="a":
+            i = ord(i) * sqrt(ord(i)) + 26
+        elif i=="b":
+            i = ord(i) * sqrt(ord(i)) + 25
+        elif i=="c":
+            i = ord(i) * sqrt(ord(i)) + 24
+        elif i=="d":
+            i = ord(i) * sqrt(ord(i)) + 23
+        elif i=="e":
+            i = ord(i) * sqrt(ord(i)) + 22
+        elif i=="f":
+            i = ord(i) * sqrt(ord(i)) + 21
+        elif i=="g":
+            i = ord(i) * sqrt(ord(i)) + 20
+        elif i=="h":
+            i = ord(i) * sqrt(ord(i)) + 19
+        elif i=="i":
+            i = ord(i) * sqrt(ord(i)) + 18
+        elif i=="j":
+            i = ord(i) * sqrt(ord(i)) + 17
+        elif i=="k":
+            i = ord(i) * sqrt(ord(i)) + 16
+        elif i=="l":
+            i = ord(i) * sqrt(ord(i)) + 15
+        elif i=="m":
+            i = ord(i) * sqrt(ord(i)) + 14
+        elif i=="n":
+            i = ord(i) * sqrt(ord(i)) + 13
+        elif i=="o":
+            i = ord(i) * sqrt(ord(i)) + 12
+        elif i=="p":
+            i = ord(i) * sqrt(ord(i)) + 11
+        elif i=="q":
+            i = ord(i) * sqrt(ord(i)) + 10
+        elif i=="r":
+            i = ord(i) * sqrt(ord(i)) + 9
+        elif i=="s":
+            i = ord(i) * sqrt(ord(i)) + 8
+        elif i=="t":
+            i = ord(i) * sqrt(ord(i)) + 7
+        elif i=="u":
+            i = ord(i) * sqrt(ord(i)) + 6
+        elif i=="v":
+            i = ord(i) * sqrt(ord(i)) + 5
+        elif i=="w":
+            i = ord(i) * sqrt(ord(i)) + 4
+        elif i=="x":
+            i = ord(i) * sqrt(ord(i)) + 3
+        elif i=="y":
+            i = ord(i) * sqrt(ord(i)) + 2
+        elif i=="z":
+            i = ord(i) * sqrt(ord(i)) + 1
+
+
+
+        else:
+            i= i + "b"
+        p2 = chr(p1)
+        val.append(p1)
+        val = sorted(val)
+        ind.append(p2)
+        ind = sorted(ind)
+
+#
+# Caesar Shift
+#
+
+if len(password)<=1:
+    password = password.join("n")
+elif len(password)<=2:
+    password = password.join("n")
+elif len(password)<=3:
+    password = password.join("s")
+elif len(password)<=4:
+    password = password.join("s")
+elif len(password)<=5:
+    password = password.join("j")
+elif len(password)<=6:
+    password = password.join("t")
+elif len(password)<=7:
+    password = password.join("g")
+elif len(password)<=8:
+    password = password.join("i")
+elif len(password)<=9:
+    password = password.join("k")
+
+
+#
+# printing the password by combining both the val and ind
+#
+
+for j in val:
+    print(j,end="")
+for k in ind:
+    print(k,end="")
+
+# sqlFormula = "INSERT INTO ENCRYPT(Original, Salted, Hashed) VALUES (password, j, k)"
+# encrypt = [("password", j, k), ]
+
+import mysql.connector
+
+mydb = mysql.connector.connect(host="localhost", user="root", passwd="NNSSJTGIKO@1234kurama..madaramysql",
+                               database="edithbase")
+
+mycursor = mydb.cursor()
+
+# mycursor.execute("select * from student")
+# for i in mycursor:
+#     print(i)
+
+# mycursor.execute("SHOW DATABASES")
+# mycursor.execute("CREATE TABLE SQUAD (name VARCHAR(255), age INTEGER(10))")
+# mycursor.execute("SHOW TABLES")
+
+# for tb in mycursor:
+#     print(tb)
+# sqlFormula = "INSERT INTO SQUAD(name, age) VALUES (%s, %s)"
+# squad = [("YASHasvi", 18),
+#           ("Rakshit", 18),
+#           ("Pradumn", 18),
+#           ("Shakti", 18),
+#           ("Harish", 18)]
+#
+# mycursor.executemany(sqlFormula, squad)
+#
+# mycursor.execute("SELECT age from squad")
+#
+# myresult = mycursor.fetchone()
+#
+# for row in myresult:
+#     print(row)
+
+
+# sql = "SELECT * FROM squad WHERE name LIKE '%S%'"
+# mycursor.execute(sql)
+#
+# myresult = mycursor.fetchall()
+# for result in myresult:
+#     print(result)
+
+# sql = "UPDATE squad SET age =19 WHERE name= 'Rakshit'"
+
+
+# mycursor.execute("SELECT * FROM squad LIMIT 4 OFFSET 1")
+#
+# myresult = mycursor.fetchall()
+# for result in myresult:
+#     print(result)
+
+# sql = "SELECT * FROM squad ORDER BY name DESC"
+# mycursor.execute(sql)
+# myresult = mycursor.fetchall()
+# for r in myresult:
+#     print(r)
+
+# sql ="DELETE FROM squad WHERE name= 'YASHasvi'"
+# for deleting entire table we use "DROP TABLE squad" but if we run this twice it will give an error as it
+# does not exist for this we use a fail safe
+# "DROP TABLE IF EXISTS squad"
+# mycursor.execute(sql)
+# mydb.commit()
+
+
+
+import turtle
+titan = turtle.Turtle()
+
+
+titan.speed(0)
+titan.hideturtle()
+titan.penup()
+titan.back(300)
+titan.pendown()
+titan.isvisible()
+titan.getscreen().bgcolor("#121212")
+
+#
+# for E
+#
+titan.color("black","darkslategray")
+titan.begin_fill()
+titan.forward(100)
+titan.left(90)
+titan.forward(20)
+titan.left(90)
+titan.forward(80)
+titan.right(90)
+titan.forward(32)
+titan.right(90)
+titan.forward(50)
+titan.left(90)
+titan.forward(20)
+titan.left(90)
+titan.forward(50)
+titan.right(90)
+titan.forward(32)
+titan.right(90)
+titan.forward(80)
+titan.left(90)
+titan.forward(20)
+titan.left(90)
+titan.forward(100)
+titan.left(90)
+titan.forward(124)
+titan.end_fill()
+titan.hideturtle()
+titan.penup()
+titan.left(90)
+titan.forward(150)
+titan.pendown()
+
+
+#
+# for I
+#
+titan.hideturtle()
+titan.color("black","lime")
+titan.begin_fill()
+titan.forward(100)
+titan.left(90)
+titan.forward(20)
+titan.left(90)
+titan.forward(40)
+titan.right(90)
+titan.forward(90)
+titan.right(90)
+titan.forward(40)
+titan.left(90)
+titan.forward(20)
+titan.left(90)
+titan.forward(100)
+titan.left(90)
+titan.forward(20)
+titan.left(90)
+titan.forward(40)
+titan.right(90)
+titan.forward(90)
+titan.right(90)
+titan.forward(40)
+titan.left(90)
+titan.forward(20)
+titan.left(90)
+titan.penup()
+titan.forward(200)
+titan.pendown()
+titan.end_fill()
+
+
+#
+# for T
+#
+titan.hideturtle()
+titan.color("black","grey")
+titan.begin_fill()
+titan.left(90)
+titan.forward(100)
+titan.right(90)
+titan.forward(40)
+titan.left(90)
+titan.forward(20)
+titan.left(90)
+titan.forward(100)
+titan.left(90)
+titan.forward(20)
+titan.left(90)
+titan.forward(40)
+titan.right(90)
+titan.forward(100)
+titan.left(90)
+titan.forward(20)
+titan.penup()
+titan.forward(90)
+titan.pendown()
+titan.end_fill()
+
+
+#
+# for H
+#
+titan.color("black","grey")
+titan.begin_fill()
+titan.left(90)
+titan.forward(130)
+titan.right(90)
+titan.forward(20)
+titan.right(90)
+titan.forward(50)
+titan.left(90)
+titan.forward(40)
+titan.left(90)
+titan.forward(50)
+titan.right(90)
+titan.forward(20)
+titan.right(90)
+titan.forward(130)
+titan.right(90)
+titan.forward(20)
+titan.right(90)
+titan.forward(50)
+titan.left(90)
+titan.forward(40)
+titan.left(90)
+titan.forward(50)
+titan.right(90)
+titan.forward(20)
+titan.end_fill()
+
+
+#
+# for D
+#
+titan.showturtle()
+titan.pensize(9)
+titan.color("turquoise")
+titan.penup()
+titan.forward(350)
+titan.pendown()
+titan.right(90)
+titan.forward(240)
+titan.right(90)
+titan.forward(30)
+
+for i in range(98):
+    titan.forward(2.3)
+    titan.right(2)
+    titan.forward(1.9)
+titan.hideturtle()
+
+
+t = turtle.Turtle()
+t.shape("turtle")
+
+t.pensize(6)
+t.pencolor("crimson")
+t.speed(0)
+t.penup()
+t.goto(360,76)
+t.pendown()
+
+for i in range(12):
+    t.begin_fill()
+    t.right(90)
+    t.forward(50)
+    t.left(120)
+    t.forward(50)
+    t.left(120)
+    t.forward(50)
+    t.end_fill()
+    t.forward(50)
+
+t.hideturtle()
+
+
+turtle.done()
+
+
+
+
+
